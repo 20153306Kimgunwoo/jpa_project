@@ -1,0 +1,8 @@
+<html>
+    <body>
+        id : <p th:text="${session.memberId}"></p>
+        name : <p th:text="${session.memberName}"></p>
+        <p>사진</p>
+        <img th:src="'/image/'+${picture.fileName}">
+    </body>
+</html>

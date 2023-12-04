@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" encoding="UTF-8">
+
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" name="memberId" th:value="${session.member.memberId}"><br>
+    
+    <input type="file" name="file"><br>
+    비밀글 여부 :<input type="checkbox" name="secretFlag" value="0">
+    <input type="submit" value="업로드">
+</form>
+</html>

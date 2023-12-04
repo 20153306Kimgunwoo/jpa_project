@@ -1,0 +1,12 @@
+<html>
+<body>
+    <table border="1">
+        <tr th:each="pageNumber : ${#numbers.sequence(1, 7, 3)}">
+            <td th:text="${pageNumber}"></td>
+            <td th:text="${pageNumber + 1}"></td>
+            <td th:text="${pageNumber + 2}"></td>
+        </tr>
+    </table>
+    <hr>
+</body>
+</html>
